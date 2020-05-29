@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add styles css file -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>PRO REFIGERATION</title>
+</head>
+
+<body>
+    <!-- == Navbar == -->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <div class="logo">
+                <img src="img/logo.png" class="logo-image" alt="" />
+
+                <img src="img/icon-hamburger.svg" alt="" class="navbar-toggler" id="openMobileNavbar" />
+                <img src="img/icon-close.png" alt="" class="navbar-toggler hidden" id="closeMobileNavbar" />
+            </div>
+            <div class="menus-container">
+                <a href="#" class="navbar-menu">Home</a>
+                <a href="#" class="navbar-menu">FAQS</a>
+                <a href="#" class="navbar-menu">Technical videos</a>
+                <a href="#" class="navbar-menu">Order Status</a>
+                <a href="#" class="navbar-menu active">Dashboard</a>
+                <a href="#" class="navbar-menu user-email">abc@gmail.com
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="navbar-icon"
+            />
+          </a>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <div class="left">
+                <p class="logo-text">PRO REFIGERATION</p>
+            </div>
+            <div class="right">
+                <button class="register-device-button">Register Device</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- == Mobile Navbar == -->
+    <div class="mobile-navbar hidden">
+        <div class="mobile-navbar-menus">
+            <a href="#" class="navbar-menu">Home</a>
+            <a href="#" class="navbar-menu">FAQS</a>
+            <a href="#" class="navbar-menu">Technical videos</a>
+            <a href="#" class="navbar-menu">Order Status</a>
+            <a href="#" class="navbar-menu active">Dashboard</a>
+            <a href="#" class="navbar-menu user-email">abc@gmail.com
+          <img
+            src="img/icon-arrow-grey.png"
+            alt="check icon"
+            class="navbar-icon"
+          />
+        </a>
+        </div>
+    </div>
+    <!-- XX Mobile Navbar XX -->
+
+    <!-- XX Navbar XX -->
+
+    <!-- == Container == -->
+    <main class="container">
+        <!-- == Container Header == -->
+        <header class="container-header">
+            <p class="title">
+                MANAGE SUBSCRIPTION
+            </p>
+
+            <div class="filter-container">
+                <div class="left">
+                    <div class="toggler-container">
+                        <p class="price-type monthly">MONTHHLY</p>
+                        <div class="toggler">
+                            <span class="toggler-area"></span>
+                            <span class="toggler-ball"></span>
+                            <input type="checkbox" name="is_annual" title="Pricing type" id="togglerButton" />
+                        </div>
+                        <p class="price-type annually active">
+                            YEARLY
+                        </p>
+
+                        <div class="toggler-hint">
+                            <img src="img/arc-arrow.png" alt="" class="toggler-hint-icon" />
+                            <p class="hint-text">2 Months FREE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="legen-info">
+                        <span class="legend-dot"></span>
+                        <p class="legend-label">ALL (5)</p>
+                    </div>
+
+                    <div class="legen-info">
+                        <span class="legend-dot green"></span>
+                        <p class="legend-label" id="subscribedLabel">
+                            SUBSCRIBED (<span class="number">3</span>)
+                        </p>
+                    </div>
+                </div>
+        </header>
+        <!-- XX Container Header XX -->
+
+        <!-- == Packages Container == -->
+        <div class="packages-container">
+            <!-- == Package #1 == -->
+
+            <div class="package-container">
+                <p class="package-title">Package #1</p>
+
+                <p class="package-value">
+                    <span class="dollar">$</span>
+                    <span class="package-number"> 199.99</span>
+                </p>
+
+                <p class="package-info">
+                    /YEAR PER DEVICE <br /> BILLED ANNUALLY
+                </p>
+                <div class="select-container">
+                    <button class="select-button" id="package1Select">
+              SELECT
+            </button>
+
+                    <img src="img/icon-arrow-white.png" alt="check icon" class="selected-icon" />
+
+                    <div class="cancel-button hidden" id="package1Cancel">
+                        CANCEL SUBSCRIBTION
+                    </div>
+                </div>
+
+                <p class="package-billing-info hidden">
+                    NEXT BILLING CYCLE <b class="bold">06/20/2020</b>
+                </p>
+
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 01 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="checcon" class="feature-icon" /> Feature 02 g
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 03 goes here
+                    </div>
+                    <div class="feature feature-hidden">
+                        <img src="img/check-icon-hidden.png" alt="check icon" class="feature-icon" /> Feature 04 goes here
+                    </div>
+                </div>
+                <button class="show-more-button">
+            Show More
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="show-more-icon"
+            />
+          </button>
+            </div>
+
+            <!-- XX Package #1 XX -->
+
+            <!-- == Package #2 == -->
+
+            <div class="package-container">
+                <p class="package-title">Package #2</p>
+                <i class="fas fa-check"></i>
+
+                <p class="package-value">
+                    <span class="dollar">$</span>
+                    <span class="package-number"> 499.99</span>
+                </p>
+
+                <p class="package-info">BILLED MONTHLY</p>
+
+                <div class="select-container selected">
+                    <button class="select-button" id="package2Select">
+              SUBSCRIBED
+            </button>
+
+                    <img src="img/icon-arrow-white.png" alt="check icon" class="selected-icon" />
+                </div>
+                <div class="cancel-button hidden" id="package2Cancel"> CANCEL SUBSCRIBTION </div>
+
+                <p class="package-billing-info">
+                    NEXT BILLING CYCLE <b class="bold">06/20/2020</b>
+                </p>
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 01 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 02 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 03 goes here
+                    </div>
+                    <div class="feature feature-hidden">
+                        <img src="img/check-icon-hidden.png" alt="check icon" class="feature-icon" /> Feature 04 goes here
+                    </div>
+                </div>
+                <button class="show-more-button">
+            Show More
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="show-more-icon"
+            />
+          </button>
+            </div>
+
+            <!-- XX Package #2 XX -->
+
+            <!-- == Package #3 == -->
+
+            <div class="package-container">
+                <p class="package-title">Package #3</p>
+
+                <p class="package-value">
+                    <span class="dollar">$</span>
+                    <span class="package-number"> 39.99</span>
+                </p>
+
+                <p class="package-info">BILLED MONTHLY</p>
+
+                <div class="select-container selected">
+                    <button class="select-button" id="package3Select">
+              Subscribed
+            </button>
+
+                    <img src="img/icon-arrow-white.png" alt="check icon" class="selected-icon" />
+
+                    <div class="cancel-button hidden" id="package3Cancel">
+                        CANCEL SUBSCRIBTION
+                    </div>
+                </div>
+
+                <p class="package-billing-info">
+                    NEXT BILLING CYCLE <b class="bold">06/20/2020</b>
+                </p>
+
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 01 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 02 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 03 goes here
+                    </div>
+                    <div class="feature feature-hidden">
+                        <img src="img/check-icon-hidden.png" alt="check icon" class="feature-icon" /> Feature 04 goes here
+                    </div>
+                </div>
+                <button class="show-more-button">
+            Show More
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="show-more-icon"
+            />
+          </button>
+            </div>
+
+
+            <!-- XX Package #3 XX -->
+            <!-- == Package #4 == -->
+
+            <div class="package-container">
+                <p class="package-title">Package #4</p>
+                <i class="fas fa-check"></i>
+
+                <p class="package-value">
+                    <span class="dollar">$</span>
+                    <span class="package-number"> 299.99</span>
+                </p>
+
+                <p class="package-info">
+                    /YEAR PER DEVICE <br /> BILLED ANNUALLY
+                </p>
+                <div class="select-container">
+                    <button class="select-button" id="package4Select">
+              SELECT
+            </button>
+
+                    <img src="img/icon-arrow-white.png" alt="check icon" class="selected-icon" />
+
+                    <div class="cancel-button hidden" id="package4Cancel">
+                        CANCEL SUBSCRIBTION
+                    </div>
+                </div>
+
+                <p class="package-billing-info hidden">
+                    NEXT BILLING CYCLE <b class="bold">06/20/2020</b>
+                </p>
+
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 01 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 02 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 03 goes here
+                    </div>
+                    <div class="feature feature-hidden">
+                        <img src="img/check-icon-hidden.png" alt="check icon" class="feature-icon" /> Feature 04 goes here
+                    </div>
+                </div>
+                <button class="show-more-button">
+            Show More
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="show-more-icon"
+            />
+          </button>
+            </div>
+            <!-- XX Package #4 XX -->
+
+
+            <!-- == Package #5 == -->
+            <div class="package-container">
+                <p class="package-title">Package #5</p>
+                <i class="fas fa-check"></i>
+
+                <p class="package-value">
+                    <span class="dollar">$</span>
+                    <span class="package-number"> 19.99</span>
+                </p>
+                <p class="package-info">BILLED MONTHLY</p>
+
+                <div class="select-container selected">
+                    <button class="select-button" id="package5Select">
+              SUBSCRIBED
+            </button>
+
+                    <img src="img/icon-arrow-white.png" alt="check icon" class="selected-icon" />
+
+                    <div class="cancel-button hidden" id="package5Cancel">
+                        CANCEL SUBSCRIBTION
+                    </div>
+                </div>
+
+                <p class="package-billing-info">
+                    NEXT BILLING CYCLE <b class="bold">06/20/2020</b>
+                </p>
+
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 01 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 02 goes here
+                    </div>
+                    <div class="feature">
+                        <img src="img/check-icon.png" alt="check icon" class="feature-icon" /> Feature 03 goes here
+                    </div>
+                    <div class="feature feature-hidden">
+                        <img src="img/check-icon-hidden.png" alt="check icon" class="feature-icon" /> Feature 04 goes here
+                    </div>
+                </div>
+                <button class="show-more-button">
+            Show More
+            <img
+              src="img/icon-arrow-grey.png"
+              alt="check icon"
+              class="show-more-icon"
+            />
+          </button>
+            </div>
+
+
+            <!-- XX Package #5 XX -->
+
+        </div>
+        <!-- XX Packages Container XX -->
+    </main>
+
+    <!-- XX Container XX -->
+
+    <!-- == Footer == -->
+    <footer class="footer">
+        <p class="footer-text">all copyrights are saved 2020</p>
+        <img src="img/gray-mountain.png" alt="" class="footer-image" />
+    </footer>
+    <!-- XX Footer XX -->
+
+
+    <!-- Add jQuery library -->
+    <script src="js/jquery.js"></script>
+    <!-- Add scripts file -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
