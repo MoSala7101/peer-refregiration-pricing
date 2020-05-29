@@ -51,10 +51,13 @@ function moveBallRight() {
 Select package button function
 ****** ***********************/
 
-$('.select-button').click(function(event) {
+/* adding the star to make the function works for the button and the arrow too */
+$('.select-container *').click(function(event) {
 
-    /* check if selected */
-    if ($(this).parent().hasClass('selected')) {
+    let buttonId = $(this).attr('id');
+    buttonId = '#' + buttonId
+        /* check if selected */
+    if ($(buttonId).parent().hasClass('selected')) {
 
         /* Show cancel subscribtion button */
         showCancelButton(event.target.id);
@@ -87,6 +90,7 @@ $('.cancel-button').click(function(event) {
 /* Show the cancel subscribtion button */
 function showCancelButton(buttonId) {
     buttonId = '#' + buttonId;
+    console.log("Value of: showCancelButton -> buttonId", buttonId);
     /* check if cancel button is shown */
     if ($(buttonId).parent().find('.cancel-button').hasClass('hidden')) {
 
